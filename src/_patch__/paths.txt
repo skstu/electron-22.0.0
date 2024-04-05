@@ -1,0 +1,16 @@
+src\chrome\build\pgo_profiles
+src\chrome\test\data\xr\webvr_info\samples\media\textures
+src/third_party/swiftshader/tests/regres/testlists
+src/third_party/catapult/tracing/test_data/
+
+Writing objects: 100% (38789/38789), 193.71 MiB | 1.07 MiB/s, done.
+Total 38789 (delta 10970), reused 38716 (delta 10905), pack-reused 0
+remote: Resolving deltas: 100% (10970/10970), completed with 4 local objects.
+remote: warning: File src/src/third_party/swiftshader/tests/regres/testlists/vk-master-PASS.txt is 55.34 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: error: Trace: 65b4522cddd0136e897dd0b831a9d537d147fef6a2b18436a1ef53d372b38b1c
+remote: error: See https://gh.io/lfs for more information.
+remote: error: File src/src/third_party/swiftshader/tests/regres/testlists/vk-master-NOT_SUPPORTED.txt is 136.61 MB; this exceeds GitHub's file size limit of 100.00 MB
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+To github.com:skstu/electron-22.0.0.git
+ ! [remote rejected]       main -> main (pre-receive hook declined)
+error: failed to push some refs to 'github.com:skstu/electron-22.0.0.git'
