@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2022
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest", "gtest.vcxproj", "{01B404C5-E000-D1DE-BE76-42F92BFE1D07}"
+	ProjectSection(ProjectDependencies) = postProject
+		{02C03613-D2EE-BD77-0EC5-ECE07AD4CDC3} = {02C03613-D2EE-BD77-0EC5-ECE07AD4CDC3}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest_main", "gtest_main.vcxproj", "{558FE490-CBC0-0B17-297B-624148550E6C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest_prod", "gtest_prod.vcxproj", "{02C03613-D2EE-BD77-0EC5-ECE07AD4CDC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01B404C5-E000-D1DE-BE76-42F92BFE1D07}.Debug|x64.ActiveCfg = Debug|x64
+		{01B404C5-E000-D1DE-BE76-42F92BFE1D07}.Debug|x64.Build.0 = Debug|x64
+		{01B404C5-E000-D1DE-BE76-42F92BFE1D07}.Release|x64.ActiveCfg = Release|x64
+		{01B404C5-E000-D1DE-BE76-42F92BFE1D07}.Release|x64.Build.0 = Release|x64
+		{02C03613-D2EE-BD77-0EC5-ECE07AD4CDC3}.Debug|x64.ActiveCfg = Debug|x64
+		{02C03613-D2EE-BD77-0EC5-ECE07AD4CDC3}.Debug|x64.Build.0 = Debug|x64
+		{02C03613-D2EE-BD77-0EC5-ECE07AD4CDC3}.Release|x64.ActiveCfg = Release|x64
+		{02C03613-D2EE-BD77-0EC5-ECE07AD4CDC3}.Release|x64.Build.0 = Release|x64
+		{558FE490-CBC0-0B17-297B-624148550E6C}.Debug|x64.ActiveCfg = Debug|x64
+		{558FE490-CBC0-0B17-297B-624148550E6C}.Debug|x64.Build.0 = Debug|x64
+		{558FE490-CBC0-0B17-297B-624148550E6C}.Release|x64.ActiveCfg = Release|x64
+		{558FE490-CBC0-0B17-297B-624148550E6C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

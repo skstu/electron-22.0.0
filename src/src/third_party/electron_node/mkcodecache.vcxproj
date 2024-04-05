@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CE12CDBF-B8B6-D607-42A4-B7D96B222013}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>mkcodecache</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <EmbedManifest>true</EmbedManifest>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\.\bin\;$(MSBuildProjectDirectory)\.\bin\</ExecutablePath>
+    <OutDir>out\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)obj\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>src;tools\msvs\genfiles;deps\v8\include;deps\cares\include;deps\uv\include;deps\uvwasi\include;deps\histogram\src;deps\icu-small\source\i18n;deps\icu-small\source\common;deps\zlib;deps\llhttp\include;deps\nghttp2\lib\includes;deps\brotli\c\include;deps\openssl\openssl\include;deps\ngtcp2;deps\ngtcp2\ngtcp2\lib\includes;deps\ngtcp2\ngtcp2\crypto\includes;deps\ngtcp2\nghttp3\lib\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:__cplusplus -std:c++17 %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4355;4800;4251;4275;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>node_pch.h</ForcedIncludeFiles>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>node_pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;V8_IMMINENT_DEPRECATION_WARNINGS;_GLIBCXX_USE_CXX11_ABI=1;ELECTRON_ENSURE_CONFIG_GYPI;NODE_OPENSSL_CONF_NAME=nodejs_conf;USING_ELECTRON_CONFIG_GYPI;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_ENABLE_SANDBOX;V8_31BIT_SMIS_ON_64BIT_ARCH;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;OPENSSL_NO_ASM;NODE_WANT_INTERNALS=1;HAVE_OPENSSL=1;HAVE_INSPECTOR=1;FD_SETSIZE=1024;NODE_PLATFORM=&quot;win32&quot;;NOMINMAX;_UNICODE=1;NODE_USE_V8_PLATFORM=1;NODE_HAVE_I18N_SUPPORT=1;UCONFIG_NO_SERVICE=1;U_ENABLE_DYLOAD=0;U_STATIC_IMPLEMENTATION=1;U_HAVE_STD_STRING=1;UCONFIG_NO_BREAK_ITERATION=0;NGHTTP2_STATICLIB;NGTCP2_STATICLIB;NGHTTP3_STATICLIB;DEBUG;_DEBUG;V8_ENABLE_CHECKS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;PsApi.lib;winmm.lib;Ws2_32.lib;iphlpapi.lib;psapi.lib;shell32.lib;userenv.lib;AdvAPI32.lib;User32.lib;ws2_32.lib;gdi32.lib;advapi32.lib;crypt32.lib;user32.lib</AdditionalDependencies>
+      <AdditionalOptions>/WHOLEARCHIVE:zlib.lib /WHOLEARCHIVE:libuv.lib /WHOLEARCHIVE:openssl.lib %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ModuleDefinitionFile>$(OutDir)obj\global_intermediate\openssl.def</ModuleDefinitionFile>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>src/res/node.exe.extra.manifest</AdditionalManifestFiles>
+    </Manifest>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>src;tools\msvs\genfiles;deps\v8\include;deps\cares\include;deps\uv\include;deps\uvwasi\include;deps\histogram\src;deps\icu-small\source\i18n;deps\icu-small\source\common;deps\zlib;deps\llhttp\include;deps\nghttp2\lib\includes;deps\brotli\c\include;deps\openssl\openssl\include;deps\ngtcp2;deps\ngtcp2\ngtcp2\lib\includes;deps\ngtcp2\ngtcp2\crypto\includes;deps\ngtcp2\nghttp3\lib\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;V8_IMMINENT_DEPRECATION_WARNINGS;_GLIBCXX_USE_CXX11_ABI=1;ELECTRON_ENSURE_CONFIG_GYPI;NODE_OPENSSL_CONF_NAME=nodejs_conf;USING_ELECTRON_CONFIG_GYPI;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_ENABLE_SANDBOX;V8_31BIT_SMIS_ON_64BIT_ARCH;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;OPENSSL_NO_ASM;NODE_WANT_INTERNALS=1;HAVE_OPENSSL=1;HAVE_INSPECTOR=1;FD_SETSIZE=1024;NODE_PLATFORM=&quot;win32&quot;;NOMINMAX;_UNICODE=1;NODE_USE_V8_PLATFORM=1;NODE_HAVE_I18N_SUPPORT=1;UCONFIG_NO_SERVICE=1;U_ENABLE_DYLOAD=0;U_STATIC_IMPLEMENTATION=1;U_HAVE_STD_STRING=1;UCONFIG_NO_BREAK_ITERATION=0;NGHTTP2_STATICLIB;NGTCP2_STATICLIB;NGHTTP3_STATICLIB;DEBUG;_DEBUG;V8_ENABLE_CHECKS;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>src;tools\msvs\genfiles;deps\v8\include;deps\cares\include;deps\uv\include;deps\uvwasi\include;deps\histogram\src;deps\icu-small\source\i18n;deps\icu-small\source\common;deps\zlib;deps\llhttp\include;deps\nghttp2\lib\includes;deps\brotli\c\include;deps\openssl\openssl\include;deps\ngtcp2;deps\ngtcp2\ngtcp2\lib\includes;deps\ngtcp2\ngtcp2\crypto\includes;deps\ngtcp2\nghttp3\lib\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:__cplusplus -std:c++17 %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4355;4800;4251;4275;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ForcedIncludeFiles>node_pch.h</ForcedIncludeFiles>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>node_pch.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;V8_IMMINENT_DEPRECATION_WARNINGS;_GLIBCXX_USE_CXX11_ABI=1;ELECTRON_ENSURE_CONFIG_GYPI;NODE_OPENSSL_CONF_NAME=nodejs_conf;USING_ELECTRON_CONFIG_GYPI;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_ENABLE_SANDBOX;V8_31BIT_SMIS_ON_64BIT_ARCH;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;OPENSSL_NO_ASM;NODE_WANT_INTERNALS=1;HAVE_OPENSSL=1;HAVE_INSPECTOR=1;FD_SETSIZE=1024;NODE_PLATFORM=&quot;win32&quot;;NOMINMAX;_UNICODE=1;NODE_USE_V8_PLATFORM=1;NODE_HAVE_I18N_SUPPORT=1;UCONFIG_NO_SERVICE=1;U_ENABLE_DYLOAD=0;U_STATIC_IMPLEMENTATION=1;U_HAVE_STD_STRING=1;UCONFIG_NO_BREAK_ITERATION=0;NGHTTP2_STATICLIB;NGTCP2_STATICLIB;NGHTTP3_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dbghelp.lib;PsApi.lib;winmm.lib;Ws2_32.lib;iphlpapi.lib;psapi.lib;shell32.lib;userenv.lib;AdvAPI32.lib;User32.lib;ws2_32.lib;gdi32.lib;advapi32.lib;crypt32.lib;user32.lib</AdditionalDependencies>
+      <AdditionalOptions>/WHOLEARCHIVE:zlib.lib /WHOLEARCHIVE:libuv.lib /WHOLEARCHIVE:openssl.lib %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ModuleDefinitionFile>$(OutDir)obj\global_intermediate\openssl.def</ModuleDefinitionFile>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>src/res/node.exe.extra.manifest</AdditionalManifestFiles>
+    </Manifest>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>src;tools\msvs\genfiles;deps\v8\include;deps\cares\include;deps\uv\include;deps\uvwasi\include;deps\histogram\src;deps\icu-small\source\i18n;deps\icu-small\source\common;deps\zlib;deps\llhttp\include;deps\nghttp2\lib\includes;deps\brotli\c\include;deps\openssl\openssl\include;deps\ngtcp2;deps\ngtcp2\ngtcp2\lib\includes;deps\ngtcp2\ngtcp2\crypto\includes;deps\ngtcp2\nghttp3\lib\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;V8_IMMINENT_DEPRECATION_WARNINGS;_GLIBCXX_USE_CXX11_ABI=1;ELECTRON_ENSURE_CONFIG_GYPI;NODE_OPENSSL_CONF_NAME=nodejs_conf;USING_ELECTRON_CONFIG_GYPI;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_ENABLE_SANDBOX;V8_31BIT_SMIS_ON_64BIT_ARCH;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;OPENSSL_NO_ASM;NODE_WANT_INTERNALS=1;HAVE_OPENSSL=1;HAVE_INSPECTOR=1;FD_SETSIZE=1024;NODE_PLATFORM=&quot;win32&quot;;NOMINMAX;_UNICODE=1;NODE_USE_V8_PLATFORM=1;NODE_HAVE_I18N_SUPPORT=1;UCONFIG_NO_SERVICE=1;U_ENABLE_DYLOAD=0;U_STATIC_IMPLEMENTATION=1;U_HAVE_STD_STRING=1;UCONFIG_NO_BREAK_ITERATION=0;NGHTTP2_STATICLIB;NGTCP2_STATICLIB;NGHTTP3_STATICLIB;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="$(OutDir)\obj\global_intermediate\openssl.def"/>
+    <None Include="node.gyp"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tools\code_cache\cache_builder.h"/>
+    <ClInclude Include="tools\msvs\pch\node_pch.h"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\node_snapshot_stub.cc">
+      <ObjectFileName>$(IntDir)\src\node_snapshot_stub.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\node_code_cache_stub.cc">
+      <ObjectFileName>$(IntDir)\src\node_code_cache_stub.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="tools\code_cache\mkcodecache.cc">
+      <ObjectFileName>$(IntDir)\tools\code_cache\mkcodecache.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="tools\code_cache\cache_builder.cc">
+      <ObjectFileName>$(IntDir)\tools\code_cache\cache_builder.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="tools\msvs\pch\node_pch.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <ObjectFileName>$(IntDir)\tools\msvs\pch\node_pch.obj</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="libnode.vcxproj">
+      <Project>{E1C55F4A-8251-D971-EFF0-A3FC0755E1A5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\histogram\histogram.vcxproj">
+      <Project>{E2C7E103-FF49-A41D-5544-9AECE376636B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\uvwasi\uvwasi.vcxproj">
+      <Project>{07AAA858-8989-D593-9E78-0302B08F5B16}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_snapshot.vcxproj">
+      <Project>{035A610A-05F6-C768-DFE5-1AA426E5E47D}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_libplatform.vcxproj">
+      <Project>{45CEB1CF-0EAD-CEE7-21B9-8849CC4FCDE7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\icu\icui18n.vcxproj">
+      <Project>{EBB997EC-8FD9-C10E-7E98-FA5D900FB257}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\icu\icuuc.vcxproj">
+      <Project>{6281DEB9-9312-E504-89F9-0565CCFC5F4D}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\zlib\zlib.vcxproj">
+      <Project>{9A79D2B9-255E-78A2-4B8A-D6D235F79526}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\llhttp\llhttp.vcxproj">
+      <Project>{22799DCA-3C88-5DAF-C0C1-072EDCB4DD89}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\cares\cares.vcxproj">
+      <Project>{F7393721-6C08-DB25-9FD6-4AD135BA4711}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\uv\libuv.vcxproj">
+      <Project>{A57083A3-B1FE-6CA3-6D4C-86B075169E44}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\nghttp2\nghttp2.vcxproj">
+      <Project>{DC3E5F4D-837C-3DC6-9ECB-B9D2964863F6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\brotli\brotli.vcxproj">
+      <Project>{96363E05-874D-F300-9092-2F47C0BC3531}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\openssl\openssl.vcxproj">
+      <Project>{B4BE2DD1-6FB2-160A-D6BA-2EE7EF6CEED2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\openssl\openssl-cli.vcxproj">
+      <Project>{3AD021A0-2ED4-4A5C-813A-85212A61C5F2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\ngtcp2\ngtcp2.vcxproj">
+      <Project>{53C947D3-7C98-1679-333B-D2B642525BF2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\ngtcp2\nghttp3.vcxproj">
+      <Project>{027E546C-2A31-B25C-376F-9CF8C32D6C11}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="deps\googletest\gtest_prod.vcxproj">
+      <Project>{02C03613-D2EE-BD77-0EC5-ECE07AD4CDC3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="node_etw.vcxproj">
+      <Project>{C55CF9C3-46E9-A0B1-42FF-635D4C0AD5CA}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\generate_bytecode_builtins_list.vcxproj">
+      <Project>{C8EAFD1C-3DD5-F8BF-C62E-AE93EFDE5BE2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\run_torque.vcxproj">
+      <Project>{4B3CA837-BFA1-A966-AE23-061A62C891D4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_maybe_icu.vcxproj">
+      <Project>{BAAD2ACF-25C4-21A7-15B1-F7534335E0C9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\icu\icuucx.vcxproj">
+      <Project>{E20473E5-7A5B-190A-4572-67434D395C95}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\icu\icu_implementation.vcxproj">
+      <Project>{A2C75E50-01CA-2D91-4B6A-F92822A46FAC}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\icu\icu_uconfig.vcxproj">
+      <Project>{0AF77A16-8A79-7287-E429-027F91EDC331}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\icu\icu_uconfig_target.vcxproj">
+      <Project>{7FB81C69-2D6D-554C-E2C4-78DFCE7D213A}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\icu\icudata.vcxproj">
+      <Project>{5799F094-DA17-49E2-D8EC-3F31EE7ACEAB}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_base_without_compiler.vcxproj">
+      <Project>{C487D419-A62C-72A5-A8AC-DA5968E0921B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\torque_generated_definitions.vcxproj">
+      <Project>{DA638EC0-D036-54A2-5A33-C22871A07897}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_internal_headers.vcxproj">
+      <Project>{D258E765-9F91-240F-495D-645068080FA0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\torque_runtime_support.vcxproj">
+      <Project>{DEC330BA-BE80-48CD-E9DA-87DDCE25838E}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_flags.vcxproj">
+      <Project>{A24DD6C2-F9DB-22FB-767B-B71519C7CBB1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_shared_internal_headers.vcxproj">
+      <Project>{91284B3C-F60B-9311-9F44-DF40EC324CF3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_headers.vcxproj">
+      <Project>{1CC47692-5412-1CD7-20A3-2D40D2CC025F}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_config_headers.vcxproj">
+      <Project>{2A052E27-84E7-4E6D-DD9F-798DA768F7EE}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\cppgc_headers.vcxproj">
+      <Project>{75BB1A87-F5CB-185E-9AF2-10E7B1C3EB6C}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_version.vcxproj">
+      <Project>{CE104A9D-9965-1B93-4963-F8022BA2667A}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_libbase.vcxproj">
+      <Project>{D25B05E0-B029-832E-0960-4792A49150F7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_bigint.vcxproj">
+      <Project>{68CD8275-B39F-1EEB-4C0F-76685FCBFDFF}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_cppgc_shared.vcxproj">
+      <Project>{BE11F96B-C0AF-0FC8-EFC7-7890716E1397}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\cppgc_base.vcxproj">
+      <Project>{16DDC109-F325-8EAE-5542-8E2A73A2D414}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_zlib.vcxproj">
+      <Project>{505C2C2C-EF58-B3D3-94E8-D4213DE7DF2B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\run_gen-regexp-special-case.vcxproj">
+      <Project>{1C41A3DD-1DB4-E5E8-06CA-F96368C95D32}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_compiler_for_mksnapshot.vcxproj">
+      <Project>{7494A8B8-A301-CF94-7A1C-A4933C216627}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_compiler.vcxproj">
+      <Project>{1E276629-48AE-7DC6-CD31-4405B0E94406}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\v8_initializers.vcxproj">
+      <Project>{EFEB3641-6B6C-F0BD-E204-550F872B7823}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tools\v8_gypfiles\torque_generated_initializers.vcxproj">
+      <Project>{584ED69F-C670-FA01-3858-43CF31A6E5B0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>
