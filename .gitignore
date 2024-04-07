@@ -1,0 +1,3 @@
+src/src/out/
+src/src/chrome/build/pgo_profiles/*.profdata
+__pycache__/
