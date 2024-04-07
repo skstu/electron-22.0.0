@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{584ED69F-C670-FA01-3858-43CF31A6E5B0}</ProjectGuid>
+    <ProjectGuid>{A1015A2D-B41D-790B-FDAF-A2545797DBE0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>torque_generated_initializers</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -24,7 +24,7 @@
     <ConfigurationType>Utility</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -127,23 +127,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="generate_bytecode_builtins_list.vcxproj">
-      <Project>{C8EAFD1C-3DD5-F8BF-C62E-AE93EFDE5BE2}</Project>
+      <Project>{61A09C72-4558-B5D8-E377-4E8B4458F3FA}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="run_torque.vcxproj">
-      <Project>{4B3CA837-BFA1-A966-AE23-061A62C891D4}</Project>
+      <Project>{7C698B8F-706B-CCD8-A28E-AEF17B3FC851}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_base_without_compiler.vcxproj">
-      <Project>{C487D419-A62C-72A5-A8AC-DA5968E0921B}</Project>
+      <Project>{5914C4A7-C922-0BFF-B496-8ECA553CE7CE}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="torque_runtime_support.vcxproj">
-      <Project>{DEC330BA-BE80-48CD-E9DA-87DDCE25838E}</Project>
+      <Project>{9A5B7553-D7B1-FAE6-6DE2-66E582D8142F}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_maybe_icu.vcxproj">
-      <Project>{BAAD2ACF-25C4-21A7-15B1-F7534335E0C9}</Project>
+      <Project>{E676E7AB-1093-D2EB-35CB-D74DF5C16068}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

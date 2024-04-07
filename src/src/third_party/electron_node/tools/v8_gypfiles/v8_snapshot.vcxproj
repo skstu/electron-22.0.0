@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{035A610A-05F6-C768-DFE5-1AA426E5E47D}</ProjectGuid>
+    <ProjectGuid>{D073056F-92B7-97AB-EF0B-D7FCC0908C96}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>v8_snapshot</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -24,7 +24,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -152,23 +152,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="generate_bytecode_builtins_list.vcxproj">
-      <Project>{C8EAFD1C-3DD5-F8BF-C62E-AE93EFDE5BE2}</Project>
+      <Project>{61A09C72-4558-B5D8-E377-4E8B4458F3FA}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="run_torque.vcxproj">
-      <Project>{4B3CA837-BFA1-A966-AE23-061A62C891D4}</Project>
+      <Project>{7C698B8F-706B-CCD8-A28E-AEF17B3FC851}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="mksnapshot.vcxproj">
-      <Project>{E57342D5-C4B9-BF9E-E5C1-922DBA7F03D7}</Project>
+      <Project>{51BFB191-5F1E-67B1-60F7-05D18C02FF6D}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_maybe_icu.vcxproj">
-      <Project>{BAAD2ACF-25C4-21A7-15B1-F7534335E0C9}</Project>
+      <Project>{E676E7AB-1093-D2EB-35CB-D74DF5C16068}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_compiler_for_mksnapshot.vcxproj">
-      <Project>{7494A8B8-A301-CF94-7A1C-A4933C216627}</Project>
+      <Project>{09B07FA3-669F-C7A7-0931-8796D32E66F2}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

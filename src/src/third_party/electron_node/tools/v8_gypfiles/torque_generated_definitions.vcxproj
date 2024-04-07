@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DA638EC0-D036-54A2-5A33-C22871A07897}</ProjectGuid>
+    <ProjectGuid>{C7289768-8C9C-8304-66CE-6414DA474C12}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>torque_generated_definitions</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -24,7 +24,7 @@
     <ConfigurationType>Utility</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -994,23 +994,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="generate_bytecode_builtins_list.vcxproj">
-      <Project>{C8EAFD1C-3DD5-F8BF-C62E-AE93EFDE5BE2}</Project>
+      <Project>{61A09C72-4558-B5D8-E377-4E8B4458F3FA}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="run_torque.vcxproj">
-      <Project>{4B3CA837-BFA1-A966-AE23-061A62C891D4}</Project>
+      <Project>{7C698B8F-706B-CCD8-A28E-AEF17B3FC851}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_internal_headers.vcxproj">
-      <Project>{D258E765-9F91-240F-495D-645068080FA0}</Project>
+      <Project>{2C470C45-62BD-CEE0-5A76-263E67CC37A1}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_libbase.vcxproj">
-      <Project>{D25B05E0-B029-832E-0960-4792A49150F7}</Project>
+      <Project>{A4FE4797-65EC-C0A9-5756-DD26B98F8392}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_maybe_icu.vcxproj">
-      <Project>{BAAD2ACF-25C4-21A7-15B1-F7534335E0C9}</Project>
+      <Project>{E676E7AB-1093-D2EB-35CB-D74DF5C16068}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

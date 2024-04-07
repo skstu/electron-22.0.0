@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9D34BD8B-0B6B-1F54-BFD8-4A96FADBDB9E}</ProjectGuid>
+    <ProjectGuid>{8D0E9962-B617-B492-6C52-FBDFE567E9D8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>gen-regexp-special-case</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -24,7 +24,7 @@
     <ConfigurationType>Application</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -136,55 +136,55 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="v8_libbase.vcxproj">
-      <Project>{D25B05E0-B029-832E-0960-4792A49150F7}</Project>
+      <Project>{A4FE4797-65EC-C0A9-5756-DD26B98F8392}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_maybe_icu.vcxproj">
-      <Project>{BAAD2ACF-25C4-21A7-15B1-F7534335E0C9}</Project>
+      <Project>{E676E7AB-1093-D2EB-35CB-D74DF5C16068}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_headers.vcxproj">
-      <Project>{1CC47692-5412-1CD7-20A3-2D40D2CC025F}</Project>
+      <Project>{C69A125D-201F-867A-C25A-CE7176417CB7}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_config_headers.vcxproj">
-      <Project>{2A052E27-84E7-4E6D-DD9F-798DA768F7EE}</Project>
+      <Project>{01E051AF-989B-5B96-9D8A-8204F20BA4D1}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="cppgc_headers.vcxproj">
-      <Project>{75BB1A87-F5CB-185E-9AF2-10E7B1C3EB6C}</Project>
+      <Project>{622DE6B5-E053-5AE1-6B3D-8F46DEA59378}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_version.vcxproj">
-      <Project>{CE104A9D-9965-1B93-4963-F8022BA2667A}</Project>
+      <Project>{F81D1111-5125-7880-E000-53090F19751B}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\icu\icui18n.vcxproj">
-      <Project>{EBB997EC-8FD9-C10E-7E98-FA5D900FB257}</Project>
+      <Project>{4F6B284B-02B6-328E-1F82-6DA243732882}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\icu\icuucx.vcxproj">
-      <Project>{E20473E5-7A5B-190A-4572-67434D395C95}</Project>
+      <Project>{BD5DE811-D3AF-2DD4-11F1-34E5A266B9B0}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\icu\icu_implementation.vcxproj">
-      <Project>{A2C75E50-01CA-2D91-4B6A-F92822A46FAC}</Project>
+      <Project>{AF104D95-843D-4AF7-4137-892B85BFDF4F}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\icu\icu_uconfig.vcxproj">
-      <Project>{0AF77A16-8A79-7287-E429-027F91EDC331}</Project>
+      <Project>{09928646-E529-4DF7-2BB1-DC0EEBEB72C8}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\icu\icu_uconfig_target.vcxproj">
-      <Project>{7FB81C69-2D6D-554C-E2C4-78DFCE7D213A}</Project>
+      <Project>{6355E7EB-ABF3-4A6D-0006-9C4DF7AFBA92}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\icu\icuuc.vcxproj">
-      <Project>{6281DEB9-9312-E504-89F9-0565CCFC5F4D}</Project>
+      <Project>{E7CC0BB8-C338-E8E0-D60E-405F323A487D}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\icu\icudata.vcxproj">
-      <Project>{5799F094-DA17-49E2-D8EC-3F31EE7ACEAB}</Project>
+      <Project>{FB55A8D5-1129-6B22-F912-35B9807E2BE6}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

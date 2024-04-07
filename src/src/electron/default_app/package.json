@@ -1,8 +1,5 @@
 {
   "name": "electron",
   "productName": "Electron",
-  "main": "main.js",
-  "build": {
-  "asar": false
-}
+  "main": "main.js"
 }

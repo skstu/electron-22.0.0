@@ -1,8 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2022
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libuv", "..\uv\libuv.vcxproj", "{A57083A3-B1FE-6CA3-6D4C-86B075169E44}"
+# Visual Studio 2019
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libuv", "..\uv\libuv.vcxproj", "{96981D7B-0195-F79F-4B1D-FBE4DF229845}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uvwasi", "uvwasi.vcxproj", "{07AAA858-8989-D593-9E78-0302B08F5B16}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uvwasi", "uvwasi.vcxproj", "{13364C55-FF18-AC72-0570-387452493CD4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(uv)", "..\..\uv", "{6B6526F7-2D1B-CE7D-2178-56EDD8DDB56D}"
 EndProject
@@ -12,19 +12,19 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{07AAA858-8989-D593-9E78-0302B08F5B16}.Debug|x64.ActiveCfg = Debug|x64
-		{07AAA858-8989-D593-9E78-0302B08F5B16}.Debug|x64.Build.0 = Debug|x64
-		{07AAA858-8989-D593-9E78-0302B08F5B16}.Release|x64.ActiveCfg = Release|x64
-		{07AAA858-8989-D593-9E78-0302B08F5B16}.Release|x64.Build.0 = Release|x64
-		{A57083A3-B1FE-6CA3-6D4C-86B075169E44}.Debug|x64.ActiveCfg = Debug|x64
-		{A57083A3-B1FE-6CA3-6D4C-86B075169E44}.Debug|x64.Build.0 = Debug|x64
-		{A57083A3-B1FE-6CA3-6D4C-86B075169E44}.Release|x64.ActiveCfg = Release|x64
-		{A57083A3-B1FE-6CA3-6D4C-86B075169E44}.Release|x64.Build.0 = Release|x64
+		{13364C55-FF18-AC72-0570-387452493CD4}.Debug|x64.ActiveCfg = Debug|x64
+		{13364C55-FF18-AC72-0570-387452493CD4}.Debug|x64.Build.0 = Debug|x64
+		{13364C55-FF18-AC72-0570-387452493CD4}.Release|x64.ActiveCfg = Release|x64
+		{13364C55-FF18-AC72-0570-387452493CD4}.Release|x64.Build.0 = Release|x64
+		{96981D7B-0195-F79F-4B1D-FBE4DF229845}.Debug|x64.ActiveCfg = Debug|x64
+		{96981D7B-0195-F79F-4B1D-FBE4DF229845}.Debug|x64.Build.0 = Debug|x64
+		{96981D7B-0195-F79F-4B1D-FBE4DF229845}.Release|x64.ActiveCfg = Release|x64
+		{96981D7B-0195-F79F-4B1D-FBE4DF229845}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A57083A3-B1FE-6CA3-6D4C-86B075169E44} = {6B6526F7-2D1B-CE7D-2178-56EDD8DDB56D}
+		{96981D7B-0195-F79F-4B1D-FBE4DF229845} = {6B6526F7-2D1B-CE7D-2178-56EDD8DDB56D}
 	EndGlobalSection
 EndGlobal

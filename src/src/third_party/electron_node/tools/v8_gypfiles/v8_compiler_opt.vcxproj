@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{55A20FD4-0A5C-47A6-5DA1-AE98C02768C9}</ProjectGuid>
+    <ProjectGuid>{612D6D3D-E318-854B-D96B-C1ACB03288DE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>v8_compiler_opt</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -24,7 +24,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -1349,23 +1349,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="generate_bytecode_builtins_list.vcxproj">
-      <Project>{C8EAFD1C-3DD5-F8BF-C62E-AE93EFDE5BE2}</Project>
+      <Project>{61A09C72-4558-B5D8-E377-4E8B4458F3FA}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="run_torque.vcxproj">
-      <Project>{4B3CA837-BFA1-A966-AE23-061A62C891D4}</Project>
+      <Project>{7C698B8F-706B-CCD8-A28E-AEF17B3FC851}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_maybe_icu.vcxproj">
-      <Project>{BAAD2ACF-25C4-21A7-15B1-F7534335E0C9}</Project>
+      <Project>{E676E7AB-1093-D2EB-35CB-D74DF5C16068}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_internal_headers.vcxproj">
-      <Project>{D258E765-9F91-240F-495D-645068080FA0}</Project>
+      <Project>{2C470C45-62BD-CEE0-5A76-263E67CC37A1}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_shared_internal_headers.vcxproj">
-      <Project>{91284B3C-F60B-9311-9F44-DF40EC324CF3}</Project>
+      <Project>{128E637B-CA68-FD16-BBA1-147E1BB48E42}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
