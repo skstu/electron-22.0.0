@@ -1,0 +1,48 @@
+.red{
+    color: red;
+}
+.start{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+}
+.startBtn{
+    margin: auto;
+    padding: 20px 30px;
+}
+.dialog{
+    background: white;
+    border: 1px solid #666;
+    width:45%;
+    height: 35%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.selectOption{
+    width: 60%;
+    height: 30px;
+    outline: none;
+    
+}
+.subBox{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.confirmBtn{
+    margin-top: 15px;
+    width: 60%;
+    height:40px;
+    background-color: white;
+    border: 1px solid #666;
+    cursor: pointer;
+}
+
+.m20{
+    margin: 20px;
+}
