@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0D52FFEC-7FBF-BC32-7C44-63261720F434}</ProjectGuid>
+    <ProjectGuid>{21CB11DF-F16A-6EF6-1698-F98353B06847}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>bytecode_builtins_list_generator</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -24,7 +24,7 @@
     <ConfigurationType>Application</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -144,23 +144,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="v8_libbase.vcxproj">
-      <Project>{A4FE4797-65EC-C0A9-5756-DD26B98F8392}</Project>
+      <Project>{521EE55F-779F-F599-3A25-FC37831044EE}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_headers.vcxproj">
-      <Project>{C69A125D-201F-867A-C25A-CE7176417CB7}</Project>
+      <Project>{8BE3F3EC-ADA9-94C8-3700-FE161985EF46}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_config_headers.vcxproj">
-      <Project>{01E051AF-989B-5B96-9D8A-8204F20BA4D1}</Project>
+      <Project>{90D10445-812B-98DB-96E0-3A309209B018}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="cppgc_headers.vcxproj">
-      <Project>{622DE6B5-E053-5AE1-6B3D-8F46DEA59378}</Project>
+      <Project>{709DF3EC-F4F9-94DA-0AD2-154DB8144B7B}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_version.vcxproj">
-      <Project>{F81D1111-5125-7880-E000-53090F19751B}</Project>
+      <Project>{6DB4DAF5-FCF5-1E4C-A917-F17E7E46ABE2}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

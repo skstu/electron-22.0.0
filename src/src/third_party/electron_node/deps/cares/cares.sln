@@ -1,17 +1,17 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2019
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cares", "cares.vcxproj", "{EFFD2427-A70C-6DB6-3CF6-4FE45DFAC8A3}"
+# Visual Studio 2022
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cares", "cares.vcxproj", "{9D5B416B-4FEE-E55F-6014-6E3767FD6303}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
+		Debug|x64 = Debug|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EFFD2427-A70C-6DB6-3CF6-4FE45DFAC8A3}.Debug|x64.ActiveCfg = Debug|x64
-		{EFFD2427-A70C-6DB6-3CF6-4FE45DFAC8A3}.Debug|x64.Build.0 = Debug|x64
-		{EFFD2427-A70C-6DB6-3CF6-4FE45DFAC8A3}.Release|x64.ActiveCfg = Release|x64
-		{EFFD2427-A70C-6DB6-3CF6-4FE45DFAC8A3}.Release|x64.Build.0 = Release|x64
+		{9D5B416B-4FEE-E55F-6014-6E3767FD6303}.Release|x64.ActiveCfg = Release|x64
+		{9D5B416B-4FEE-E55F-6014-6E3767FD6303}.Release|x64.Build.0 = Release|x64
+		{9D5B416B-4FEE-E55F-6014-6E3767FD6303}.Debug|x64.ActiveCfg = Debug|x64
+		{9D5B416B-4FEE-E55F-6014-6E3767FD6303}.Debug|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

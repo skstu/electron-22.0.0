@@ -1,37 +1,37 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2019
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nghttp3", "nghttp3.vcxproj", "{46D9DF96-7CA8-CCB4-443D-6A309E2E2E27}"
+# Visual Studio 2022
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nghttp3", "nghttp3.vcxproj", "{8F521333-A72D-E0AE-C810-27967F5B5796}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ngtcp2", "ngtcp2.vcxproj", "{54E919AB-6BBC-4F94-C4D2-EAAC09C546D8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ngtcp2", "ngtcp2.vcxproj", "{5A316FBE-FAE9-CA9C-70F7-E2A5FB2B7A9F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openssl", "..\openssl\openssl.vcxproj", "{043BD4D8-7303-D2BF-71AE-35625F8CABF6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openssl", "..\openssl\openssl.vcxproj", "{D58B8BB9-C55D-CF94-66BF-9D24015CF945}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(ngtcp2)", "..\..\ngtcp2", "{BEADA469-05F6-1C76-7630-AEC2B82D5F69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
+		Debug|x64 = Debug|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{043BD4D8-7303-D2BF-71AE-35625F8CABF6}.Debug|x64.ActiveCfg = Debug|x64
-		{043BD4D8-7303-D2BF-71AE-35625F8CABF6}.Debug|x64.Build.0 = Debug|x64
-		{043BD4D8-7303-D2BF-71AE-35625F8CABF6}.Release|x64.ActiveCfg = Release|x64
-		{043BD4D8-7303-D2BF-71AE-35625F8CABF6}.Release|x64.Build.0 = Release|x64
-		{46D9DF96-7CA8-CCB4-443D-6A309E2E2E27}.Debug|x64.ActiveCfg = Debug|x64
-		{46D9DF96-7CA8-CCB4-443D-6A309E2E2E27}.Debug|x64.Build.0 = Debug|x64
-		{46D9DF96-7CA8-CCB4-443D-6A309E2E2E27}.Release|x64.ActiveCfg = Release|x64
-		{46D9DF96-7CA8-CCB4-443D-6A309E2E2E27}.Release|x64.Build.0 = Release|x64
-		{54E919AB-6BBC-4F94-C4D2-EAAC09C546D8}.Debug|x64.ActiveCfg = Debug|x64
-		{54E919AB-6BBC-4F94-C4D2-EAAC09C546D8}.Debug|x64.Build.0 = Debug|x64
-		{54E919AB-6BBC-4F94-C4D2-EAAC09C546D8}.Release|x64.ActiveCfg = Release|x64
-		{54E919AB-6BBC-4F94-C4D2-EAAC09C546D8}.Release|x64.Build.0 = Release|x64
+		{5A316FBE-FAE9-CA9C-70F7-E2A5FB2B7A9F}.Release|x64.ActiveCfg = Release|x64
+		{5A316FBE-FAE9-CA9C-70F7-E2A5FB2B7A9F}.Release|x64.Build.0 = Release|x64
+		{5A316FBE-FAE9-CA9C-70F7-E2A5FB2B7A9F}.Debug|x64.ActiveCfg = Debug|x64
+		{5A316FBE-FAE9-CA9C-70F7-E2A5FB2B7A9F}.Debug|x64.Build.0 = Debug|x64
+		{8F521333-A72D-E0AE-C810-27967F5B5796}.Release|x64.ActiveCfg = Release|x64
+		{8F521333-A72D-E0AE-C810-27967F5B5796}.Release|x64.Build.0 = Release|x64
+		{8F521333-A72D-E0AE-C810-27967F5B5796}.Debug|x64.ActiveCfg = Debug|x64
+		{8F521333-A72D-E0AE-C810-27967F5B5796}.Debug|x64.Build.0 = Debug|x64
+		{D58B8BB9-C55D-CF94-66BF-9D24015CF945}.Release|x64.ActiveCfg = Release|x64
+		{D58B8BB9-C55D-CF94-66BF-9D24015CF945}.Release|x64.Build.0 = Release|x64
+		{D58B8BB9-C55D-CF94-66BF-9D24015CF945}.Debug|x64.ActiveCfg = Debug|x64
+		{D58B8BB9-C55D-CF94-66BF-9D24015CF945}.Debug|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{46D9DF96-7CA8-CCB4-443D-6A309E2E2E27} = {BEADA469-05F6-1C76-7630-AEC2B82D5F69}
-		{54E919AB-6BBC-4F94-C4D2-EAAC09C546D8} = {BEADA469-05F6-1C76-7630-AEC2B82D5F69}
+		{8F521333-A72D-E0AE-C810-27967F5B5796} = {BEADA469-05F6-1C76-7630-AEC2B82D5F69}
+		{5A316FBE-FAE9-CA9C-70F7-E2A5FB2B7A9F} = {BEADA469-05F6-1C76-7630-AEC2B82D5F69}
 	EndGlobalSection
 EndGlobal

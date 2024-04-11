@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BD5DE811-D3AF-2DD4-11F1-34E5A266B9B0}</ProjectGuid>
+    <ProjectGuid>{7675E5B6-55E4-EE6A-8DB1-1F4CBDCED639}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>icuucx</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -23,7 +23,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -833,15 +833,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="icu_implementation.vcxproj">
-      <Project>{AF104D95-843D-4AF7-4137-892B85BFDF4F}</Project>
+      <Project>{56A5AB81-6FBA-4F83-5FD2-1E48296EB1E6}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="icu_uconfig.vcxproj">
-      <Project>{09928646-E529-4DF7-2BB1-DC0EEBEB72C8}</Project>
+      <Project>{041A1C2B-7F9C-A948-B40F-FD9A823308D2}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="icu_uconfig_target.vcxproj">
-      <Project>{6355E7EB-ABF3-4A6D-0006-9C4DF7AFBA92}</Project>
+      <Project>{8E737FA3-3373-5189-FB68-62CC7921C470}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

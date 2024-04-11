@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D2F7589B-DD9F-37A5-DF5C-0722B0B480F0}</ProjectGuid>
+    <ProjectGuid>{52D6DF62-D3AE-5B0C-C8E6-331787810B4C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>libnode</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -23,7 +23,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -1722,19 +1722,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="deps\googletest\gtest_prod.vcxproj">
-      <Project>{9DC265A4-AE5E-5367-FA7E-AA22ABE67B07}</Project>
+      <Project>{249808E7-9102-C508-78A1-59AF02EF22FB}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="node_etw.vcxproj">
-      <Project>{8297EA1B-0830-48B0-E47B-A5D8D7F41C34}</Project>
+      <Project>{DCD637F2-89D5-0EF0-C219-40120A4C5C74}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="tools\icu\icuuc.vcxproj">
-      <Project>{E7CC0BB8-C338-E8E0-D60E-405F323A487D}</Project>
+      <Project>{79002BD7-99CB-D336-A73B-32B5F84F13A9}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="deps\openssl\openssl-cli.vcxproj">
-      <Project>{1FAD3B48-791F-C1F5-1CEB-843184CDD3D0}</Project>
+      <Project>{FEE6AED7-3636-D335-2550-E9BC78B7D12D}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

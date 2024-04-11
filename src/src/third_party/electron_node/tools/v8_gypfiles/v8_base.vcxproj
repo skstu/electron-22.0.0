@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{43BFFA54-3788-C275-C04B-FE1E2BF039E9}</ProjectGuid>
+    <ProjectGuid>{9F4C13DB-1F85-BAF3-5971-AA87DE3E32F1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>v8_base</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -24,7 +24,7 @@
     <ConfigurationType>Utility</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -123,11 +123,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="v8_base_without_compiler.vcxproj">
-      <Project>{5914C4A7-C922-0BFF-B496-8ECA553CE7CE}</Project>
+      <Project>{0E37F172-DF46-F5FD-2CB9-59ADF9A7BD28}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_compiler.vcxproj">
-      <Project>{82B626E1-B0D5-14BD-D7F8-DBD33FFD9DAC}</Project>
+      <Project>{FFD08053-D1B4-748A-0290-26BFD66D78F4}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

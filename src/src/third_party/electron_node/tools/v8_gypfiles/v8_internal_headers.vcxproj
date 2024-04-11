@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2C470C45-62BD-CEE0-5A76-263E67CC37A1}</ProjectGuid>
+    <ProjectGuid>{54CCAD62-E037-68D1-2D92-D3DD0F47D411}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>v8_internal_headers</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -24,7 +24,7 @@
     <ConfigurationType>Utility</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -176,39 +176,39 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="torque_runtime_support.vcxproj">
-      <Project>{9A5B7553-D7B1-FAE6-6DE2-66E582D8142F}</Project>
+      <Project>{2ED24473-E491-3FBA-15F4-F7EDB7B65C09}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_flags.vcxproj">
-      <Project>{5D056E85-C26B-9864-C02C-4C5D90B8CDF6}</Project>
+      <Project>{6711C8EA-4ABA-3ECF-123C-00CD85139F7A}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_headers.vcxproj">
-      <Project>{C69A125D-201F-867A-C25A-CE7176417CB7}</Project>
+      <Project>{8BE3F3EC-ADA9-94C8-3700-FE161985EF46}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_maybe_icu.vcxproj">
-      <Project>{E676E7AB-1093-D2EB-35CB-D74DF5C16068}</Project>
+      <Project>{74A3350B-BBE1-C12F-DC44-23ED488C6257}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_shared_internal_headers.vcxproj">
-      <Project>{128E637B-CA68-FD16-BBA1-147E1BB48E42}</Project>
+      <Project>{10D1ED4E-DC4E-7EBD-6108-6C12C7B8C32D}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="cppgc_headers.vcxproj">
-      <Project>{622DE6B5-E053-5AE1-6B3D-8F46DEA59378}</Project>
+      <Project>{709DF3EC-F4F9-94DA-0AD2-154DB8144B7B}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="generate_bytecode_builtins_list.vcxproj">
-      <Project>{61A09C72-4558-B5D8-E377-4E8B4458F3FA}</Project>
+      <Project>{FBA2A173-6F9C-6E8B-511E-CF7E0682D3D8}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="run_torque.vcxproj">
-      <Project>{7C698B8F-706B-CCD8-A28E-AEF17B3FC851}</Project>
+      <Project>{F197B88C-91E2-FDF7-4DE8-520CFCC69900}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="v8_libbase.vcxproj">
-      <Project>{A4FE4797-65EC-C0A9-5756-DD26B98F8392}</Project>
+      <Project>{521EE55F-779F-F599-3A25-FC37831044EE}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

@@ -1,17 +1,17 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2019
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "zlib.vcxproj", "{24B5D152-AEE5-F5EF-307B-9CE1C3DD8E51}"
+# Visual Studio 2022
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "zlib.vcxproj", "{854CB542-53FB-8589-3182-2051503CA465}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
+		Debug|x64 = Debug|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{24B5D152-AEE5-F5EF-307B-9CE1C3DD8E51}.Debug|x64.ActiveCfg = Debug|x64
-		{24B5D152-AEE5-F5EF-307B-9CE1C3DD8E51}.Debug|x64.Build.0 = Debug|x64
-		{24B5D152-AEE5-F5EF-307B-9CE1C3DD8E51}.Release|x64.ActiveCfg = Release|x64
-		{24B5D152-AEE5-F5EF-307B-9CE1C3DD8E51}.Release|x64.Build.0 = Release|x64
+		{854CB542-53FB-8589-3182-2051503CA465}.Release|x64.ActiveCfg = Release|x64
+		{854CB542-53FB-8589-3182-2051503CA465}.Release|x64.Build.0 = Release|x64
+		{854CB542-53FB-8589-3182-2051503CA465}.Debug|x64.ActiveCfg = Debug|x64
+		{854CB542-53FB-8589-3182-2051503CA465}.Debug|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,17 +1,17 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2019
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nghttp2", "nghttp2.vcxproj", "{02131776-2BA7-5DA7-BC9B-9383EBFFEAB3}"
+# Visual Studio 2022
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nghttp2", "nghttp2.vcxproj", "{E42BF3B9-7C79-A4D2-DA38-E840F6BD4FCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
+		Debug|x64 = Debug|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{02131776-2BA7-5DA7-BC9B-9383EBFFEAB3}.Debug|x64.ActiveCfg = Debug|x64
-		{02131776-2BA7-5DA7-BC9B-9383EBFFEAB3}.Debug|x64.Build.0 = Debug|x64
-		{02131776-2BA7-5DA7-BC9B-9383EBFFEAB3}.Release|x64.ActiveCfg = Release|x64
-		{02131776-2BA7-5DA7-BC9B-9383EBFFEAB3}.Release|x64.Build.0 = Release|x64
+		{E42BF3B9-7C79-A4D2-DA38-E840F6BD4FCD}.Release|x64.ActiveCfg = Release|x64
+		{E42BF3B9-7C79-A4D2-DA38-E840F6BD4FCD}.Release|x64.Build.0 = Release|x64
+		{E42BF3B9-7C79-A4D2-DA38-E840F6BD4FCD}.Debug|x64.ActiveCfg = Debug|x64
+		{E42BF3B9-7C79-A4D2-DA38-E840F6BD4FCD}.Debug|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
