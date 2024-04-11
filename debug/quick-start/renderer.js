@@ -6,12 +6,14 @@
  * to expose Node.js functionality from the main process.
  */
 
-const { ipcRenderer } = require('electron');  
-  
-// 发送消息到主进程  
-ipcRenderer.send('message-from-renderer', 'Hello from renderer');  
-  
-// 监听主进程的回复  
-ipcRenderer.on('message-from-main', (event, arg) => {  
-  console.log('Received reply from main process: ', arg);  
+/*
+const ipcRenderer = require('electron').ipcRenderer;
+
+ipcRenderer.send('message-name', 'hello from renderer');
+
+const ipcMain = require('electron').ipcMain;
+
+ipcMain.on('message-name', (event, arg) => {
+  console.log(arg); 
 });
+*/

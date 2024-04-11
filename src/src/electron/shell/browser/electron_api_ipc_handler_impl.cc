@@ -39,6 +39,9 @@ void ElectronApiIPCHandlerImpl::OnConnectionError() {
 void ElectronApiIPCHandlerImpl::Message(bool internal,
                                         const std::string& channel,
                                         blink::CloneableMessage arguments) {
+  const char* view = channel.c_str();
+  if (view) {
+  }
   api::WebContents* api_web_contents = api::WebContents::From(web_contents());
   if (api_web_contents) {
     api_web_contents->Message(internal, channel, std::move(arguments),

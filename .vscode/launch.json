@@ -7,8 +7,8 @@
         "request": "launch",
         "program": "${workspaceFolder}\\src\\src\\out\\Release\\electron.exe",
         //--enable-gui D:\\source\\electron\\22.0.0\\electron-quick-start\\main.js
-        "args": ["${workspaceFolder}\\debug\\electron-quick-start"],
-        "stopAtEntry": true,
+        "args": ["${workspaceFolder}\\debug\\quick-start"],
+        "stopAtEntry": false,
         "cwd": "${workspaceFolder}",
         "environment": [
             {"name": "ELECTRON_ENABLE_LOGGING", "value": "true"},

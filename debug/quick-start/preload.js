@@ -6,6 +6,9 @@
  *
  * https://www.electronjs.org/docs/latest/tutorial/sandbox
  */
+
+const { ipcRenderer } = require("electron");
+
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector)
@@ -15,4 +18,17 @@ window.addEventListener('DOMContentLoaded', () => {
   for (const type of ['chrome', 'node', 'electron']) {
     replaceText(`${type}-version`, process.versions[type])
   }
+
+  ipcRenderer.on('*', (event, message) => {
+    console.log(event.channel, message);
+  });
+  
+  ipcRenderer.on('test_btn', (event) => {
+    event.reply('get-message', 'Hello from the renderer process!');
+  });
+
+  document.getElementById("test_btn").addEventListener("click", () => {
+    ipcRenderer.send("hello martell!")
+  });
+
 })
