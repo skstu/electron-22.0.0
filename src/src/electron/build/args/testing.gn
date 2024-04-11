@@ -1,6 +1,6 @@
 import("all.gn")
 is_debug = true
-is_component_build = false
+is_component_build = true
 is_component_ffmpeg = true
 is_official_build = false
 dcheck_always_on = true
