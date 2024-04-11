@@ -8,3 +8,5 @@ src\third_party\angle\third_party\VK-GL-CTS\src\android\cts\main\vksc-main
 src\buildtools\reclient
 
 src/chrome/build/pgo_profiles/
+
+src/src/electron/
